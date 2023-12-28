@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from '../employee';
 
 @Component({
   selector: 'app-employee',
@@ -11,7 +12,7 @@ firstname:String="mani";
 lastname:String="kandan";
 gender:String="male";
 age:number=20;
-showDetails:Boolean=false;
+showDetails:Boolean=true;
 
 toggleDetails():void {
   this.showDetails=!this.showDetails;

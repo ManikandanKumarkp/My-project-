@@ -1,3 +1,5 @@
+   <app-employee-count ></app-employee-count>
+                    <br/>   
 <table>
     <thead>
         <tr>
@@ -9,15 +11,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let employee of employees;trackByEmpcode">
-        <td>{{employee.code| uppercase }}</td>
-        <td>{{ employee.Name}}</td>
-        <td>{{employee.gender}}</td>
-        <td>{{employee.Annualsalary| currency:'USD':true:'1'}}</td>
-        <td>{{employee.dateofBirth| date:'dd/mm/y' |uppercase}}</td>
+        <tr *ngFor="let Employee of employees;trackByEmpcode">
+        <td>{{Employee.code| uppercase }}</td>
+        <td>{{Employee.Name}}</td>
+        <td>{{Employee.gender}}</td>
+        <td>{{Employee.Annualsalary| currency:'USD':true:'1'}}</td>
+        <td>{{Employee.dateofBirth| date:'dd/mm/y' |uppercase}}</td>
         </tr>
         <tr *ngIf="!employees || employees.length==0">
-        <td colspan="5">no employees to display </td>
-        </tr>
+        <td colspan="5">no Employees to display </td>
+        </tr> 
     </tbody>
-</table>
+</table> 

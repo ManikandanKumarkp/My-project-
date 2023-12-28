@@ -1,4 +1,4 @@
-export interface IEmployee {
+export interface Employee {
 code:String;
 name:String
 gender:String;
@@ -8,7 +8,7 @@ dateofbirth:String;
 
 }
 
-export class IEmployee implements IEmployee{
+export class Employee implements Employee {
  public code:String;
   public name:String; 
   public gender:String; 

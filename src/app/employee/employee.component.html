@@ -1,7 +1,4 @@
-<app-employee-count [all]="getTotalEmployeeCount()"
-                    [male]="getMaleEmployeeCount()"
-                    [female]="getFemaleEmployeeCount()"></app-employee-count>
-                    <br/>
+
 <table>
     <thead>
         <tr> <th attr.colspan="{{ columnspan }}">
@@ -11,6 +8,7 @@
     </thead>
     <tbody>
         <tr>
+            <td><a [routerLink]="['/Employees','Employees.code']"></a></td>
             <td>First Name</td>
             <td>{{ firstname }}</td>
         </tr>

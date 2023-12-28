@@ -6,15 +6,15 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./employee-count.component.sass']
 })
 export class EmployeeCountComponent {
-@Input() all:number;
-@Input() male:number;
-@Input() female:number;
+// @Input() All:number;
+// @Input() Male:number;
+// @Input() Female:number;
 
-selectedRadioButtonValue:string='All';
-@Output()
-countRadioButtonSelectionChanged:EventEmitter<string>=new EventEmitter<string>();
+// selectedRadioButtonValue:string='All';
+// @Output()
+// countRadioButtonSelectionChanged:EventEmitter<string>=new EventEmitter<string>();
 
-onRadioButtonSelectionChang(){
-this.countRadioButtonSelectionChanged.emit(this.selectedRadioButtonValue);
-}
+// onRadioButtonSelectionChang(){
+// this.countRadioButtonSelectionChanged.emit(this.selectedRadioButtonValue);
+// }
 }
